@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>GenNexx Global Private Limited | Next Generation Technology</title>
+<meta name="description" content="AI & ML, B2B data, custom software, web development and US IT recruitment from Perambalur, Tamil Nadu.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700&family=Figtree:wght@400;500;600&family=Noto+Sans+Tamil:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{--ink:#0E1736;--bg:#F5F7FB;--fg:#0E1736;--mut:#55608A;--card:#fff;--line:#DDE3F0;--blue:#2B50F5;--aqua:#14C2B0;--h:'Bricolage Grotesque','Segoe UI',system-ui,sans-serif;--b:'Figtree','Segoe UI',system-ui,sans-serif;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);color-scheme:light}
+@media(prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0A1026;--fg:#EAF0FF;--mut:#9AA6CC;--card:#111A3C;--line:#222D5A;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#0A1026;--fg:#EAF0FF;--mut:#9AA6CC;--card:#111A3C;--line:#222D5A;color-scheme:dark}
+html{height:100%;scroll-padding-top:calc(env(safe-area-inset-top,0px) + 72px);scroll-behavior:smooth}
+*,*::before,*::after{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--fg);font:400 17px/1.6 var(--b);-webkit-font-smoothing:antialiased}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);background:var(--ink);z-index:60}
+h1,h2,h3{font-family:var(--h);line-height:1.1;margin:0;letter-spacing:-.02em}
+p{margin:0}a{color:inherit}
+:focus-visible{outline:3px solid var(--aqua);outline-offset:3px;border-radius:4px}
+.wrap{width:min(1120px,100% - 40px);margin-inline:auto}
+header{position:sticky;top:env(safe-area-inset-top,0px);z-index:50;background:var(--ink);color:#fff}
+.bar{display:flex;align-items:center;justify-content:space-between;height:68px}
+.logo{display:flex;align-items:center;gap:10px;text-decoration:none;font:700 21px var(--h)}
+.logo small{display:block;font:500 11px var(--b);color:#9FB0E6;letter-spacing:.02em;margin-top:-2px}
+nav{display:flex;align-items:center;gap:4px}
+nav a{padding:9px 13px;border-radius:8px;text-decoration:none;font-size:15px;font-weight:500;color:#C9D4F5}
+nav a:hover,nav a.on{color:#fff;background:rgba(255,255,255,.09)}
+nav a.cta{background:var(--aqua);color:#06241F;font-weight:600;margin-left:8px}
+nav a.cta:hover{background:#3DD6C5}
+.burger{display:none;background:none;border:1px solid rgba(255,255,255,.3);color:#fff;border-radius:8px;width:44px;height:44px;font-size:20px;cursor:pointer}
+@media(max-width:860px){.burger{display:block}nav{display:none;position:absolute;left:0;right:0;top:68px;background:var(--ink);flex-direction:column;align-items:stretch;padding:8px 20px 20px;border-top:1px solid #243063}nav.open{display:flex}nav a{padding:14px 12px}nav a.cta{margin:8px 0 0;text-align:center}}
+.btn{display:inline-block;padding:14px 24px;border-radius:10px;font-weight:600;text-decoration:none;border:1.5px solid transparent;cursor:pointer;font:600 16px var(--b)}
+.btn.p{background:var(--aqua);color:#06241F}.btn.p:hover{background:#3DD6C5}
+.btn.g{border-color:rgba(255,255,255,.35);color:#fff}.btn.g:hover{background:rgba(255,255,255,.1)}
+.btn.d{background:var(--blue);color:#fff}.btn.d:hover{background:#1E3FD0}
+.hero{background:var(--ink);color:#fff;position:relative;overflow:hidden;min-height:min(680px,88vh);display:flex;align-items:center}
+.hero canvas{position:absolute;inset:0;width:100%;height:100%}
+.hero .wrap{position:relative;padding:72px 0;display:grid;grid-template-columns:1.1fr .9fr;gap:24px;align-items:center}
+.hero h1{font-size:clamp(40px,7.2vw,88px);max-width:12ch;font-weight:700}
+.hero p{max-width:52ch;font-size:clamp(17px,2vw,20px);color:#C3CEF0;margin:24px 0 34px}
+.hero .row{display:flex;gap:12px;flex-wrap:wrap}
+.loc{display:inline-flex;gap:8px;align-items:center;font-size:14px;color:#9FB0E6;margin-bottom:22px}
+.loc i{width:8px;height:8px;border-radius:50%;background:var(--aqua);box-shadow:0 0 0 4px rgba(20,194,176,.25)}
+.strip{background:var(--card);border-bottom:1px solid var(--line)}
+.strip .wrap{display:grid;grid-template-columns:repeat(4,1fr)}
+.strip div{padding:22px 0 22px 20px;border-left:1px solid var(--line)}
+.strip b{display:block;font:700 22px var(--h)}.strip span{font-size:14px;color:var(--mut)}
+@media(max-width:700px){.strip .wrap{grid-template-columns:1fr 1fr}.strip div:nth-child(3){border-top:1px solid var(--line)}.strip div:nth-child(4){border-top:1px solid var(--line)}}
+section.pg{display:none}section.pg.on{display:block}
+.blk{padding:clamp(56px,9vw,104px) 0}
+.blk.alt{background:var(--card);border-block:1px solid var(--line)}
+.head{max-width:680px;margin-bottom:44px}
+.head h2,.page-h h1{font-size:clamp(30px,4.6vw,50px)}
+.head p,.page-h p{color:var(--mut);margin-top:14px;font-size:18px}
+.page-h{background:radial-gradient(620px 320px at 88% 0,rgba(43,80,245,.55),transparent 70%),radial-gradient(400px 240px at 0 100%,rgba(20,194,176,.18),transparent 70%),linear-gradient(rgba(255,255,255,.04) 1px,transparent 1px) 0 0/48px 48px,linear-gradient(90deg,rgba(255,255,255,.04) 1px,transparent 1px) 0 0/48px 48px,var(--ink);color:#fff;padding:clamp(56px,8vw,96px) 0}
+.page-h p{color:#C3CEF0;max-width:56ch}
+.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:40px 36px}
+.grid3 h3{font-size:20px;margin-bottom:8px;padding-top:16px;border-top:3px solid var(--line);position:relative}.grid3 h3::before{content:"";position:absolute;left:0;top:-3px;height:3px;width:40px;background:linear-gradient(90deg,var(--blue),var(--aqua));transition:width .5s cubic-bezier(.2,.7,.2,1)}.grid3>div:hover h3::before{width:100%}
+.grid3 p{color:var(--mut);font-size:16px}
+@media(max-width:900px){.grid3{grid-template-columns:1fr 1fr}}@media(max-width:600px){.grid3{grid-template-columns:1fr}}
+.svc{border-top:1px solid var(--line)}
+.row3{display:grid;grid-template-columns:.9fr 1.6fr 1fr;gap:12px 36px;padding:28px 0;border-bottom:1px solid var(--line);align-items:start}
+.row3 h3{font-size:22px}.row3 p{color:var(--mut);font-size:16px}
+.tags{display:flex;flex-wrap:wrap;gap:6px}.tags span{font-size:13px;padding:4px 10px;border-radius:99px;background:rgba(43,80,245,.1);color:var(--blue);font-weight:500}
+@media(prefers-color-scheme:dark){:root:not([data-theme="light"]) .tags span{color:#8FA6FF}}
+@media(max-width:820px){.row3{grid-template-columns:1fr}}
+.chips{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:28px}
+.chips button{font:500 15px var(--b);padding:9px 18px;border-radius:99px;border:1.5px solid var(--line);background:var(--card);color:var(--fg);cursor:pointer}
+.chips button[aria-pressed=true]{background:var(--blue);border-color:var(--blue);color:#fff}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:start}
+@media(max-width:820px){.two{grid-template-columns:1fr;gap:36px}}
+.two h2{font-size:clamp(28px,4vw,42px);margin-bottom:18px}.two>*{min-width:0}.two.cw{grid-template-columns:.8fr 1.2fr}@media(max-width:820px){.two.cw{grid-template-columns:1fr}}
+.two p+p{margin-top:16px}.two p{color:var(--mut)}
+.facts{background:var(--ink);color:#fff;border-radius:18px;padding:40px 32px;align-self:stretch;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center}.facts svg{margin-bottom:18px}.facts b{font:700 22px var(--h)}.facts .since{color:var(--aqua);font-size:14px;font-weight:500;margin-top:4px}.facts hr{width:56px;border:0;height:2px;background:linear-gradient(90deg,var(--blue),var(--aqua));margin:22px 0}.facts p{color:#B9C5EE;font-size:15px;line-height:1.9;font-weight:400}
+.facts dl{margin:0}.facts dt{font-size:13px;color:#9FB0E6}.facts dd{margin:2px 0 18px;font:600 19px var(--h)}.facts dd:last-child{margin-bottom:0}
+.mv{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+@media(max-width:820px){.mv{grid-template-columns:1fr}}
+.mv div{border:1px solid var(--line);background:var(--card);border-radius:16px;padding:32px}
+.mv h3{font-size:24px;margin-bottom:12px}.mv p{color:var(--mut)}
+.band{background:linear-gradient(120deg,var(--blue),#1A2E9E);color:#fff;padding:clamp(48px,7vw,80px) 0}
+.band .wrap{display:flex;justify-content:space-between;align-items:center;gap:28px;flex-wrap:wrap}
+.band h2{font-size:clamp(28px,4vw,44px);max-width:16ch}.band p{color:#D4DCFF;margin-top:10px}
+.band .btn{background:#fff;color:var(--ink)}
+.steps{list-style:none;margin:0;padding:0;counter-reset:s;max-width:720px}
+.steps li{counter-increment:s;position:relative;padding:0 0 34px 64px}
+.steps li::before{content:counter(s);position:absolute;left:0;top:0;width:40px;height:40px;border-radius:50%;display:grid;place-items:center;font:700 16px var(--h);background:var(--card);border:2px solid var(--line);z-index:1}
+.steps li::after{content:"";position:absolute;left:19px;top:40px;bottom:0;width:2px;background:var(--line)}
+.steps li:last-child::after{display:none}
+.steps li.done::before{content:"✓";background:var(--aqua);border-color:var(--aqua);color:#06241F}
+.steps li.now::before{border-color:var(--blue);color:var(--blue)}
+.steps h3{font-size:20px}.steps p{color:var(--mut);font-size:16px;margin-top:4px}
+.steps em{font-style:normal;font-size:13px;font-weight:600;color:var(--blue);margin-left:8px}
+.cc{display:grid;gap:22px}.cc div{padding-bottom:20px;border-bottom:1px solid var(--line)}
+.cc small{display:block;color:var(--mut);font-size:14px}.cc a,.cc b{font:600 20px var(--h);text-decoration:none;font-weight:600}
+.cc a:hover{color:var(--blue)}
+form{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:clamp(22px,4vw,36px);display:grid;grid-template-columns:1fr 1fr;gap:18px}
+form .f{grid-column:span 2}@media(min-width:600px){form .h{grid-column:span 1}}
+@media(max-width:599px){form .h{grid-column:span 2}}
+label{display:block;font-size:14px;font-weight:600;margin-bottom:6px}
+input,select,textarea{width:100%;font:400 16px var(--b);padding:13px 14px;border-radius:10px;border:1.5px solid var(--line);background:var(--bg);color:var(--fg)}
+input:focus,select:focus,textarea:focus{outline:none;border-color:var(--blue);box-shadow:0 0 0 3px rgba(43,80,245,.2)}
+textarea{min-height:130px;resize:vertical}
+.hire{border-left:4px solid var(--aqua);padding:6px 0 6px 24px;max-width:640px}
+.hire h2{font-size:clamp(26px,3.6vw,38px);margin-bottom:12px}.hire p{color:var(--mut);margin-bottom:22px}
+.modes{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+@media(max-width:700px){.modes{grid-template-columns:1fr}}
+.modes div{padding:24px;border:1px solid var(--line);border-radius:14px;background:var(--card)}
+.modes h3{font-size:20px;margin-bottom:6px}.modes p{color:var(--mut);font-size:16px}
+footer{background:var(--ink);color:#B9C5EE;padding:56px 0 28px;font-size:15px}
+.fg{display:grid;grid-template-columns:1.6fr 1fr 1.3fr;gap:36px}
+@media(max-width:900px){.fg{grid-template-columns:1fr 1fr}.fg>div:first-child{grid-column:1/-1}}footer a{overflow-wrap:anywhere}
+footer h4{margin:0 0 12px;color:#fff;font:600 15px var(--b)}
+footer a{display:block;text-decoration:none;padding:4px 0}footer a:hover{color:#fff}
+.kural{margin-top:36px;padding-top:24px;border-top:1px solid #243063;font-size:14px}
+.kural q{display:block;color:#fff;font-size:16px;quotes:none;line-height:1.7}
+.copy{margin-top:20px;font-size:13px;color:#8392C4}
+#toast{position:fixed;left:50%;bottom:calc(24px + env(safe-area-inset-bottom,0px));transform:translate(-50%,30px);background:var(--ink);color:#fff;padding:14px 22px;border-radius:12px;border:1px solid var(--aqua);opacity:0;pointer-events:none;transition:.3s;z-index:80;max-width:90vw}
+#toast.on{opacity:1;transform:translate(-50%,0)}
+.hero h1{font-size:clamp(40px,5.6vw,76px);max-width:13ch}
+.hero::before,.hero::after{content:"";position:absolute;border-radius:50%;pointer-events:none}
+.hero::before{width:680px;height:680px;right:-140px;top:-180px;background:radial-gradient(circle,rgba(43,80,245,.5),transparent 65%)}
+.hero::after{width:520px;height:520px;left:-160px;bottom:-240px;background:radial-gradient(circle,rgba(20,194,176,.22),transparent 65%)}
+.hc>*{opacity:0;animation:up .9s cubic-bezier(.2,.7,.2,1) forwards}.hc>:nth-child(2){animation-delay:.12s}.hc>:nth-child(3){animation-delay:.24s}.hc>:nth-child(4){animation-delay:.36s}
+@keyframes up{from{opacity:0;transform:translateY(26px)}to{opacity:1;transform:none}}
+.orb{position:relative;aspect-ratio:1;width:min(100%,460px);justify-self:center;animation:up 1.2s .3s cubic-bezier(.2,.7,.2,1) both}
+.orb svg{width:100%;height:100%;overflow:visible}
+.rg{fill:none;stroke:rgba(108,139,255,.32);stroke-width:1}.rg.d{stroke-dasharray:3 8}
+.r0{fill:rgba(20,194,176,.07);stroke:rgba(20,194,176,.4)}
+.o1,.o2,.o3{transform-origin:200px 200px;animation:spin 26s linear infinite}.o2{animation-duration:44s;animation-direction:reverse}.o3{animation-duration:70s}
+@keyframes spin{to{transform:rotate(360deg)}}
+.chip{position:absolute;padding:7px 14px;border-radius:99px;font-size:13px;font-weight:600;background:rgba(255,255,255,.09);border:1px solid rgba(255,255,255,.2);backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px);color:#fff;animation:fl 6s ease-in-out infinite;white-space:nowrap}
+@keyframes fl{50%{transform:translateY(-10px)}}
+@media(max-width:900px){.hero .wrap{grid-template-columns:1fr;padding:56px 0 40px}.orb{width:min(82%,340px)}}
+#pg{position:absolute;left:0;right:0;bottom:0;height:3px;background:linear-gradient(90deg,var(--aqua),var(--blue));transform:scaleX(0);transform-origin:left}
+header{transition:box-shadow .3s}header.s{box-shadow:0 10px 30px -14px rgba(0,0,0,.6)}
+.btn{transition:transform .2s,box-shadow .2s,background .2s}.btn:hover{transform:translateY(-2px);box-shadow:0 12px 26px -10px rgba(20,194,176,.6)}.btn.d:hover{box-shadow:0 12px 26px -10px rgba(43,80,245,.7)}
+.pg.on{animation:pgin .5s ease}@keyframes pgin{from{opacity:0}}
+.tick{overflow:hidden;white-space:nowrap;border-bottom:1px solid var(--line);padding:18px 0}
+.tick div{display:inline-flex;align-items:center;animation:mq 34s linear infinite}
+.tick span{font:600 22px var(--h);color:var(--mut)}.tick span::after{content:"";display:inline-block;width:8px;height:8px;border-radius:50%;background:var(--aqua);margin:0 44px}
+@keyframes mq{to{transform:translateX(-100%)}}
+.row3{position:relative}.row3::before{content:"";position:absolute;left:0;top:-1px;height:2px;width:0;background:linear-gradient(90deg,var(--blue),var(--aqua));transition:width .6s cubic-bezier(.2,.7,.2,1)}.row3:hover::before{width:100%}.row3 h3{transition:color .25s}.row3:hover h3{color:var(--blue)}
+.mv>div,.modes>div{transition:transform .3s,box-shadow .3s,border-color .3s}.mv>div:hover,.modes>div:hover{transform:translateY(-6px);border-color:var(--blue);box-shadow:0 20px 40px -22px rgba(20,40,140,.5)}
+.band{background:linear-gradient(120deg,#2B50F5,#1A2E9E,#157A74,#2B50F5);background-size:300% 300%;animation:gs 18s ease infinite}
+@keyframes gs{50%{background-position:100% 50%}}
+.js .rv{opacity:0;transform:translateY(24px);transition:opacity .8s ease,transform .8s cubic-bezier(.2,.7,.2,1);transition-delay:var(--d,0s)}.js .rv.in{opacity:1;transform:none}
+.js .steps li::after{transform:scaleY(0);transform-origin:top;transition:transform .9s .3s ease}.js .steps li.in::after{transform:scaleY(1)}
+.steps li.now::before{animation:pulse 2s ease-out infinite}@keyframes pulse{from{box-shadow:0 0 0 0 rgba(43,80,245,.5)}to{box-shadow:0 0 0 14px rgba(43,80,245,0)}}
+.kr{margin:44px auto 0;padding-top:28px;border-top:1px solid #243063;text-align:center;max-width:520px}
+.kr figcaption{font:500 12px 'Noto Sans Tamil',var(--b);color:#8392C4;margin-bottom:12px}
+.kr blockquote{margin:0;font-family:'Noto Sans Tamil','Nirmala UI',sans-serif}.kr blockquote p{font-size:15px;line-height:1.9;color:#fff;font-weight:500}
+.kr .mn{font-size:12.5px;font-style:italic;color:#9FB0E6;margin-top:8px}.kr .au{font-size:12px;color:#8392C4;margin-top:2px;font-family:'Noto Sans Tamil',var(--b)}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{animation:none!important;transition:none!important}.hc>*,.orb{opacity:1}.tick{overflow-x:auto}}
+</style>
+</head>
+<body>
+<header><div id="pg"></div><div class="wrap bar">
+<a class="logo" href="#home" aria-label="GenNexx Global home">
+<svg width="38" height="38" viewBox="0 0 40 40" fill="none" aria-hidden="true"><rect width="40" height="40" rx="11" fill="#1A2756"/><path d="M29 12.5A12 12 0 1 0 31.5 22" stroke="#14C2B0" stroke-width="3.4" stroke-linecap="round"/><path d="M21 22h10.5" stroke="#fff" stroke-width="3.4" stroke-linecap="round"/><circle cx="29" cy="12.5" r="3" fill="#6C8BFF"/></svg>
+<span>GenNexx<small>Global Pvt. Ltd.</small></span></a>
+<button class="burger" aria-label="Menu" aria-expanded="false">☰</button>
+<nav id="nav"><a href="#home">Home</a><a href="#about">About us</a><a href="#services">Services</a><a href="#products">Products</a><a href="#careers">Careers</a><a class="cta" href="#contact">Get in touch</a></nav>
+</div></header>
+
+<main>
+<section class="pg" id="home">
+<div class="hero"><canvas id="net" aria-hidden="true"></canvas><div class="wrap">
+<div class="hc">
+<h1>We build what intelligence demands</h1>
+<p>GenNexx Global delivers AI & ML solutions, B2B data intelligence, custom software, web development and US IT recruitment for businesses that refuse to stay ordinary.</p>
+<div class="row"><a class="btn p" href="#services">Explore services</a><a class="btn g" href="#contact">Get in touch</a></div></div>
+<div class="orb" aria-hidden="true"><svg viewBox="0 0 400 400"><circle cx="200" cy="200" r="72" class="r0"/><g class="o1"><circle cx="200" cy="200" r="120" class="rg"/><circle cx="320" cy="200" r="7" fill="#14C2B0"/><circle cx="80" cy="200" r="5" fill="#6C8BFF"/></g><g class="o2"><circle cx="200" cy="200" r="165" class="rg"/><circle cx="200" cy="35" r="7" fill="#6C8BFF"/><circle cx="317" cy="317" r="5" fill="#14C2B0"/></g><g class="o3"><circle cx="200" cy="200" r="196" class="rg d"/><circle cx="4" cy="200" r="6" fill="#14C2B0"/></g><g transform="translate(150 150) scale(2.5)" fill="none"><rect width="40" height="40" rx="11" fill="#1A2756"/><path d="M29 12.5A12 12 0 1 0 31.5 22" stroke="#14C2B0" stroke-width="3.4" stroke-linecap="round"/><path d="M21 22h10.5" stroke="#fff" stroke-width="3.4" stroke-linecap="round"/><circle cx="29" cy="12.5" r="3" fill="#6C8BFF"/></g></svg>
+<span class="chip" style="top:8%;left:0">AI & ML</span><span class="chip" style="top:24%;right:-2%;animation-delay:-2s">B2B Data</span><span class="chip" style="bottom:26%;left:-3%;animation-delay:-4s">Web & Product</span><span class="chip" style="bottom:6%;right:6%;animation-delay:-1s">US IT Recruitment</span></div>
+</div></div>
+<div class="strip"><div class="wrap"><div><b data-n="7" data-s="+">7+</b><span>Core services</span></div><div><b data-n="100" data-s="%">100%</b><span>Client focus</span></div><div><b>24/7</b><span>Support ready</span></div><div><b>Global</b><span>Reach and impact</span></div></div></div>
+<div class="tick" aria-hidden="true"><div><span>AI & ML</span><span>B2B Data</span><span>Web Development</span><span>Product Development</span><span>US IT Recruitment</span><span>Branding</span><span>Analytics</span></div><div><span>AI & ML</span><span>B2B Data</span><span>Web Development</span><span>Product Development</span><span>US IT Recruitment</span><span>Branding</span><span>Analytics</span></div></div>
+<div class="blk"><div class="wrap"><div class="head"><h2>Not just another software company</h2><p>We combine deep technical expertise with a growth-first mindset. Every solution is built to deliver measurable impact.</p></div><div class="grid3" id="why"></div></div></div>
+<div class="blk alt"><div class="wrap"><div class="head"><h2>Services that scale with you</h2><p>From B2B data to AI & ML, every part of your business covered.</p></div><div class="svc" id="svcHome"></div><p style="margin-top:32px"><a class="btn d" href="#services">View all services</a></p></div></div>
+<div class="band"><div class="wrap"><div><h2>Ready to grow your business?</h2><p>Let’s talk about how GenNexx Global can solve your biggest challenges.</p></div><a class="btn" href="#contact">Talk to us</a></div></div>
+</section>
+
+<section class="pg" id="about">
+<div class="page-h"><div class="wrap"><h1>About GenNexx Global</h1><p>Building the future of technology, one solution at a time.</p></div></div>
+<div class="blk"><div class="wrap two"><div><h2>Our story</h2>
+<p>GenNexx Global Private Limited was founded on one belief: great technology should be accessible, intelligent and growth-enabling for every business, whatever its size.</p>
+<p>Since launching in 2027, we’ve been building a team of engineers, data experts and recruiters united by one mission: help businesses grow smarter and faster through technology.</p>
+<p>We’re not just a vendor. We’re a growth partner. From B2B data intelligence to AI & ML and branding, we bring end-to-end capability under one roof, with a focus on quality, transparency and long-term impact.</p></div>
+<div class="facts"><svg width="72" height="72" viewBox="0 0 40 40" fill="none" aria-hidden="true"><rect width="40" height="40" rx="11" fill="#1A2756"/><path d="M29 12.5A12 12 0 1 0 31.5 22" stroke="#14C2B0" stroke-width="3.4" stroke-linecap="round"/><path d="M21 22h10.5" stroke="#fff" stroke-width="3.4" stroke-linecap="round"/><circle cx="29" cy="12.5" r="3" fill="#6C8BFF"/></svg><b>GenNexx Global Pvt. Ltd.</b><span class="since">Since 2027</span><hr><p>Headquartered in Perambalur, Tamil Nadu<br>Serving global clients · 7+ core services<br>Next Generation Technology Company</p></div></div></div>
+<div class="blk alt"><div class="wrap"><div class="head"><h2>What we stand for</h2></div><div class="grid3" id="vals"></div></div></div>
+<div class="blk"><div class="wrap"><div class="head"><h2>Mission and vision</h2></div><div class="mv">
+<div><h3>Our mission</h3><p>To empower businesses of all sizes with innovative technology that simplifies operations, unlocks data potential and accelerates sustainable growth, delivered with integrity and precision.</p></div>
+<div><h3>Our vision</h3><p>To become a globally recognized technology partner known for turning ideas into impact, in a world where every business has access to intelligent, scalable, human-centered software.</p></div></div></div></div>
+</section>
+
+<section class="pg" id="services">
+<div class="page-h"><div class="wrap"><h1>Services</h1><p>End-to-end technology solutions designed to accelerate your business growth.</p></div></div>
+<div class="blk"><div class="wrap"><div class="chips" id="chips"></div><div class="svc" id="svcAll"></div></div></div>
+<div class="band"><div class="wrap"><div><h2>Need something specific?</h2><p>Tell us the problem. We’ll shape the solution.</p></div><a class="btn" href="#contact">Talk to us</a></div></div>
+</section>
+
+<section class="pg" id="products">
+<div class="page-h"><div class="wrap"><h1>Products in development</h1><p>Digital products across technology, education and enterprise solutions. We won’t ship until each one meets our standard.</p></div></div>
+<div class="blk"><div class="wrap two"><div><h2>Where we are</h2><p>The GenNexx product team is designing and engineering a suite of digital products. Want to hear first when they go live? Join the early access list.</p><p style="margin-top:24px"><a class="btn d" href="mailto:info@gennexx.com?subject=Early%20access%20request">Get early access</a></p></div>
+<ol class="steps"><li class="done"><h3>Discovery and research</h3><p>Market analysis and user research complete.</p></li><li class="now"><h3>Design and architecture<em>In progress</em></h3><p>Wireframes and system design underway.</p></li><li><h3>Development and build</h3><p>Engineering phase, coming soon.</p></li><li><h3>Beta launch</h3><p>Limited early access for select partners.</p></li></ol></div></div>
+</section>
+
+<section class="pg" id="careers">
+<div class="page-h"><div class="wrap"><h1>Careers at GenNexx</h1><p>We’re building something big and want energetic, passionate people with us from day one.</p></div></div>
+<div class="blk"><div class="wrap"><div class="hire"><h2>We’re always hiring freshers and interns</h2><p>Ambitious fresher or intern ready to launch your tech career? GenNexx Global is looking for talented people to join the founding team. Be part of something special from the very beginning.</p><a class="btn d" href="mailto:info@gennexx.com?subject=Application">Send your resume</a></div></div></div>
+<div class="blk alt"><div class="wrap"><div class="head"><h2>Life at GenNexx</h2><p>The best work happens when people feel trusted, inspired and empowered.</p></div><div class="grid3" id="cult"></div></div></div>
+<div class="blk"><div class="wrap"><div class="head"><h2>How we work</h2><p>Flexible arrangements to match different roles and lifestyles.</p></div><div class="modes"><div><h3>Remote</h3><p>Work from anywhere. Just ship great work on time.</p></div><div><h3>On-site</h3><p>Join our Perambalur office for full collaboration.</p></div><div><h3>Hybrid</h3><p>Balance office and remote for maximum flexibility.</p></div></div>
+<p style="margin-top:36px;color:var(--mut);max-width:60ch">No specific openings are listed yet. We’re always looking for exceptional talent, so send your resume and tell us how you’d like to contribute.</p></div></div>
+</section>
+
+<section class="pg" id="contact">
+<div class="page-h"><div class="wrap"><h1>Contact us</h1><p>We’d love to hear from you. Let’s build something great together.</p></div></div>
+<div class="blk"><div class="wrap two cw">
+<div class="cc"><div><small>General enquiries</small><a href="mailto:info@gennexx.com">info@gennexx.com</a></div><div><small>Phone</small><a href="tel:+918110948492">+91 81109 48492</a></div><div><small>Business hours</small><b>Mon–Sat, 10 AM–7 PM IST</b></div></div>
+<form id="cf"><div class="h"><label for="fn">First name *</label><input id="fn" required autocomplete="given-name"></div><div class="h"><label for="ln">Last name *</label><input id="ln" required autocomplete="family-name"></div><div class="h"><label for="mb">Mobile number *</label><input id="mb" type="tel" required autocomplete="tel"></div><div class="h"><label for="em">Email *</label><input id="em" type="email" required autocomplete="email"></div><div class="f"><label for="rg">Regarding *</label><select id="rg" required><option value="">Select a topic</option><option>Services</option><option>Careers</option><option>General enquiry</option></select></div><div class="f"><label for="ms">Message *</label><textarea id="ms" required></textarea></div><div class="f"><button class="btn d" type="submit">Send message</button></div></form>
+</div></div>
+</section>
+</main>
+
+<footer><div class="wrap"><div class="fg">
+<div><a class="logo" href="#home" style="padding:0"><svg width="34" height="34" viewBox="0 0 40 40" fill="none" aria-hidden="true"><rect width="40" height="40" rx="11" fill="#1A2756"/><path d="M29 12.5A12 12 0 1 0 31.5 22" stroke="#14C2B0" stroke-width="3.4" stroke-linecap="round"/><path d="M21 22h10.5" stroke="#fff" stroke-width="3.4" stroke-linecap="round"/><circle cx="29" cy="12.5" r="3" fill="#6C8BFF"/></svg><span style="color:#fff">GenNexx<small>Global Pvt. Ltd.</small></span></a><p style="margin-top:14px;max-width:32ch">Building intelligent solutions that grow your business. Based in Perambalur, Tamil Nadu, serving clients worldwide.</p></div>
+<div><h4>Company</h4><a href="#home">Home</a><a href="#about">About us</a><a href="#services">Services</a><a href="#products">Products</a><a href="#careers">Careers</a><a href="#contact">Contact</a></div>
+<div><h4>Contact</h4><a href="mailto:info@gennexx.com">info@gennexx.com</a><a href="tel:+918110948492">+91 81109 48492</a></div>
+
+</div><figure class="kr" style="margin-inline:auto"><figcaption>திருக்குறள் · ஆள்வினையுடைமை · குறள் 619</figcaption><blockquote lang="ta"><p>தெய்வத்தான் ஆகா தெனினும் முயற்சிதன்</p><p>மெய்வருத்தக் கூலி தரும்.</p></blockquote><p class="mn">Even if fate stands in the way, effort pays the wages of one’s labour.</p><p class="au">— திருவள்ளுவர்</p></figure>
+<div class="copy">© 2027 GenNexx Global Private Limited. All rights reserved. · Perambalur, Tamil Nadu, India</div></div></footer>
+<div id="toast" role="status" aria-live="polite"></div>
+
+<script>
+var $=function(s){return document.querySelector(s)},$$=function(s){return[].slice.call(document.querySelectorAll(s))};
+var S=[
+["Data","B2B Data Services","Accurate, enriched, verified business data: company profiles, contact databases, industry segmentation and intent data that fuel your sales pipeline.",["Lead lists","Company profiles","Contact data","Intent data"]],
+["Data","Data & Analytics","Turn raw data into decisions. Data warehousing, ETL pipelines, interactive dashboards and predictive analytics.",["Business intelligence","Dashboards","ETL pipelines"]],
+["Tech","Web Development","Fast, responsive, SEO-optimized websites and web applications built to convert.",["React / Next.js","E-commerce","Landing pages"]],
+["Tech","Product Development","Scalable, secure software from concept to deployment: SaaS platforms, mobile apps and enterprise tools.",["SaaS","Mobile apps","MVP development"]],
+["Tech","AI & ML Solutions","Predictive models, NLP pipelines, recommendation engines and computer vision that automate decisions.",["Predictive models","NLP","Computer vision","AI automation"]],
+["Tech","GenAI Development","Custom chatbots, document assistants, content generation and AI agents powered by large language models and your own data.",["LLM apps","AI chatbots","RAG on your data","AI agents"]],
+["Talent","US IT Recruitment","Sourcing, screening and placing IT professionals for US companies, quickly and precisely.",["C2C","W2","1099","Contract staffing"]],
+["Creative","Branding Solutions","Logo design, visual identity, brand strategy and marketing collateral that connect with your audience.",["Logo design","Visual identity","Brand strategy"]]];
+var WHY=[["Growth-driven approach","Every solution is engineered around your growth, from strategy to execution."],["Agile, fast delivery","Agile methods get you rapid delivery without lowering the quality bar."],["Trusted partnership","Long-term relationships, not one-off projects. Transparency and accountability come first."],["End-to-end solutions","Data analytics to AI, web development to US IT recruitment. One partner, complete solutions."],["AI-first thinking","Intelligence is designed in from day one, not bolted on later."],["Measurable results","We track revenue impact, efficiency gains and business outcomes."]];
+var VAL=[["Innovation","We keep evolving and adopt new technologies to stay ahead."],["Integrity","Honest, transparent relationships with every client."],["Excellence","The highest standards on every project."],["Growth","Your growth is our success metric."]];
+var CULT=[["Growth mindset","Everyone is encouraged to learn, experiment and grow."],["Collaborative spirit","No silos. We celebrate wins and solve challenges together."],["Innovation first","Ideas are welcome from everyone, whatever their experience."],["Work-life balance","Flexible schedules and output-driven goals. We respect your time."],["Recognition and rewards","Performance bonuses and shout-outs for going the extra mile."],["Diverse and inclusive","Every background and perspective belongs here."]];
+function cards(a){return a.map(function(x){return'<div><h3>'+x[0]+'</h3><p>'+x[1]+'</p></div>'}).join('')}
+function rows(a){return a.map(function(x){return'<div class="row3" data-c="'+x[0]+'"><h3>'+x[1]+'</h3><p>'+x[2]+'</p><div class="tags">'+x[3].map(function(t){return'<span>'+t+'</span>'}).join('')+'</div></div>'}).join('')}
+$('#why').innerHTML=cards(WHY);$('#vals').innerHTML=cards(VAL);$('#cult').innerHTML=cards(CULT);
+$('#svcHome').innerHTML=rows(['B2B Data Services','AI & ML Solutions','Web Development','Product Development','US IT Recruitment','Branding Solutions'].map(function(n){return S.filter(function(x){return x[1]==n})[0]}));$('#svcAll').innerHTML=rows(S);
+$('#chips').innerHTML=['All','Data','Tech','Talent','Creative'].map(function(c,i){return'<button type="button" aria-pressed="'+(i==0)+'">'+c+'</button>'}).join('');
+$('#chips').addEventListener('click',function(e){var b=e.target.closest('button');if(!b)return;$$('#chips button').forEach(function(x){x.setAttribute('aria-pressed',x===b)});$$('#svcAll .row3').forEach(function(r){r.style.display=(b.textContent=='All'||r.dataset.c==b.textContent)?'':'none'})});
+/* router */
+var T={home:'Home',about:'About us',services:'Services',products:'Products',careers:'Careers',contact:'Contact'};
+function route(){var h=(location.hash||'#home').slice(1);if(!T[h])h='home';$$('.pg').forEach(function(p){p.classList.toggle('on',p.id==h)});$$('nav a').forEach(function(a){a.classList.toggle('on',a.getAttribute('href')=='#'+h)});document.title=(h=='home'?'':T[h]+' | ')+'GenNexx Global Private Limited';$('#nav').classList.remove('open');$('.burger').setAttribute('aria-expanded','false');window.scrollTo(0,0);run=(h=='home')&&!rm;if(run)loop()}
+var burger=$('.burger');burger.onclick=function(){var o=$('#nav').classList.toggle('open');burger.setAttribute('aria-expanded',o)};
+/* hero network */
+var rm=matchMedia('(prefers-reduced-motion:reduce)').matches,run=false,cv=$('#net'),cx=cv.getContext('2d'),N=[],W,Hh;
+function size(){var d=devicePixelRatio||1;W=cv.clientWidth;Hh=cv.clientHeight;cv.width=W*d;cv.height=Hh*d;cx.setTransform(d,0,0,d,0,0);var n=Math.round(Math.min(70,W/18));N=[];for(var i=0;i<n;i++)N.push({x:Math.random()*W,y:Math.random()*Hh,vx:(Math.random()-.5)*.35,vy:(Math.random()-.5)*.35,r:1.5+Math.random()*2})}
+function draw(){cx.clearRect(0,0,W,Hh);for(var i=0;i<N.length;i++){var a=N[i];if(run){a.x+=a.vx;a.y+=a.vy;if(a.x<0||a.x>W)a.vx*=-1;if(a.y<0||a.y>Hh)a.vy*=-1}for(var j=i+1;j<N.length;j++){var b=N[j],d=Math.hypot(a.x-b.x,a.y-b.y);if(d<130){cx.strokeStyle='rgba(108,139,255,'+(.4*(1-d/130))+')';cx.lineWidth=1;cx.beginPath();cx.moveTo(a.x,a.y);cx.lineTo(b.x,b.y);cx.stroke()}}cx.fillStyle=i%5?'#6C8BFF':'#14C2B0';cx.beginPath();cx.arc(a.x,a.y,a.r,0,7);cx.fill()}}
+function loop(){if(!run)return;draw();requestAnimationFrame(loop)}
+addEventListener('resize',function(){size();draw()});
+addEventListener('hashchange',route);
+/* form → opens email app (no server needed) */
+function toast(m){var t=$('#toast');t.textContent=m;t.classList.add('on');setTimeout(function(){t.classList.remove('on')},4000)}
+$('#cf').addEventListener('submit',function(e){e.preventDefault();var v=function(i){return $('#'+i).value.trim()};var body='Name: '+v('fn')+' '+v('ln')+'\nMobile: '+v('mb')+'\nEmail: '+v('em')+'\n\n'+v('ms');location.href='mailto:info@gennexx.com?subject='+encodeURIComponent('Website enquiry: '+v('rg'))+'&body='+encodeURIComponent(body);toast('Opening your email app to send the message.')});
+if(!rm)document.documentElement.classList.add('js');
+function count(el){var n=+el.dataset.n,s=el.dataset.s||'',t0=performance.now();if(rm){el.textContent=n+s;return}(function f(t){var p=Math.min((t-t0)/1100,1);el.textContent=Math.round(n*(1-Math.pow(1-p,3)))+s;if(p<1)requestAnimationFrame(f)})(t0)}
+var io=new IntersectionObserver(function(es){es.forEach(function(e){if(!e.isIntersecting)return;var el=e.target;io.unobserve(el);el.classList.add('in');if(el.dataset.n)count(el);setTimeout(function(){el.classList.remove('rv')},1500)})},{threshold:.15,rootMargin:'0px 0px -6% 0px'});
+$$('.head,.grid3>div,.row3,.mv>div,.modes>div,.steps li,.facts,.cc>div,.hire,.strip div,.band .wrap>*,form,#about .two>div:first-child,#products .two>div:first-child').forEach(function(el){var i=[].indexOf.call(el.parentNode.children,el);el.style.setProperty('--d',Math.min(i,5)*.08+'s');el.classList.add('rv');io.observe(el)});
+$$('[data-n]').forEach(function(el){io.observe(el)});
+var hd=$('header'),pgb=$('#pg');addEventListener('scroll',function(){var m=document.documentElement.scrollHeight-innerHeight;pgb.style.transform='scaleX('+(m>0?Math.min(scrollY/m,1):0)+')';hd.classList.toggle('s',scrollY>10)},{passive:true});
+size();draw();route();
+</script>
+</body>
+</html>
